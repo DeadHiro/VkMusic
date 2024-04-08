@@ -20,7 +20,7 @@ async def start(message: Message) -> None:
     await message.reply("Hi!",reply_markup=webAppBuilder())
 
 async def main() -> None:
-    bot = Bot('6277617045:AAHNTatUkNegioauk_tKPFrGx421xcS5_0Q', default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot('token', default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher()
     dp.include_router(router)
 
